@@ -5,12 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "push": "git add . && git commit -m 'update_deployment' && git push origin main"
   },
   "dependencies": {
