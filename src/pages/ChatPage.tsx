@@ -18,7 +18,7 @@ const ChatPage = () => {
       const answer = await ask(input);
       console.log(answer)
       // 添加 AI 回复
-      const aiMessage = { text: "I got answer", sender: "bot" };
+      const aiMessage = { text: answer, sender: "bot" };
       setMessages((prev) => [...prev, aiMessage]);
     } catch (error) {
       console.error("Error while sending question:", error);
