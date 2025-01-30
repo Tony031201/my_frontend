@@ -15,6 +15,7 @@ const ChatPage = () => {
   
     try {
       // 向后端发送用户问题
+      console.log("come on, i get now")
       const answer = await ask(input);
       console.log(answer)
       // 添加 AI 回复
