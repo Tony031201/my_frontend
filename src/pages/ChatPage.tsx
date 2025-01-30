@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ask } from "../services/ask";
+import { ask } from "../services/ask.ts";
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([
@@ -18,7 +18,7 @@ const ChatPage = () => {
       const response = await ask(input);
   
       // 添加 AI 回复
-      const aiMessage = { text: response.data.answer, sender: "bot" };
+      const aiMessage = { text: response.answer, sender: "bot" };
       setMessages((prev) => [...prev, aiMessage]);
     } catch (error) {
       console.error("Error while sending question:", error);
