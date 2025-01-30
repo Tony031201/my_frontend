@@ -24,7 +24,7 @@ const ChatPage = () => {
       console.error("Error while sending question:", error);
       setMessages((prev) => [
         ...prev,
-        { text: "AI无法回答您的问题，请稍后再试。", sender: "bot" },
+        { text: "AI无法回答您的问题,请稍后再试。", sender: "bot" },
       ]);
     }
   
