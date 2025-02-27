@@ -22,7 +22,7 @@ const LoginPage = () => {
         setErrors("Sign-in failed. Please try again.");
       }
     } catch (error) {
-      console.error("Login failed", errors);
+      console.error("Login failed", error);
     }
   };
 

@@ -3,7 +3,7 @@ import { ask } from "../services/ask.ts";
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([
-    { text: "你好！我可以帮你解答问题。", sender: "bot" },
+    { text: "问题格式: 白菜苗  或者是  芽菜。 开冰请问:**开冰. 只提供位置", sender: "bot" },
   ]);
   const [input, setInput] = useState("");
 
