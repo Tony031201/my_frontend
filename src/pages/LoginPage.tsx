@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
-  const [errors, setErrors] = useState("");
+  // const [errors, setErrors] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const LoginPage = () => {
         localStorage.setItem('sessionId', response.username);
         navigate("/chat");
       } else {
-        setErrors("Sign-in failed. Please try again.");
+        // setErrors("Sign-in failed. Please try again.");
       }
     } catch (error) {
       console.error("Login failed", error);
